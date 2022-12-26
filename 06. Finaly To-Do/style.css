@@ -151,3 +151,8 @@ h4{
 input[type="time"]{
     font-size: 20px;
 }
+
+
+.rotate45deg{
+    transform: rotate(45deg);
+}
