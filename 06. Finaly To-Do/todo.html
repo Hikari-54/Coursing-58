@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ka-Ri-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение анимации -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Создадим шаблон для задач в todo -->
+    <template>
+        <div class="todo-task">
+            <p>Текст задачи</p>
+            <div class="todo-button">
+                <div class="cross" onclick="deleteTask(this)">
+                    <img src="img/Cross.svg" alt="Удалить задачу">
+                </div>
+                <div class="ok" onclick="this.parentNode.parentNode.remove()">
+                    <img src="img/Ok.svg" alt="Удалить задачу">
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- Можно добавить фрейм с гугл календаря -->
+    <!-- <iframe src="https://calendar.google.com/calendar/embed?src=716098e5107a2123422d9c38e419fd80bf4adf4d3b3e5f277715bff9228d1757%40group.calendar.google.com&ctz=Europe%2FMoscow" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe> -->
+
+    <h1 class="animate__animated animate__slideInUp">Ka-Ri-Do App</h1>
+
+    <div class="container animate__animated animate__slideInUp">
+        <input type="text" name="task-maker" id="task-maker" placeholder="Press enter">
+        <!-- <button onclick="insertTask()">Внести задачу</button> -->
+
+        <div class="todo-list">
+            <!-- Тут будут добавляться новые задачи (.todo-task) -->
+        </div>
+
+        <!-- <button onclick="playAlarm()">Play</button> -->
+    </div>
+
+    <div class="timer animate__animated animate__slideInUp">
+        <h4>Установить таймер</h4>
+        <div>
+            <input type="time" value="00:15" step="1">
+        </div>
+        <h4>Времени осталось</h4>
+
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

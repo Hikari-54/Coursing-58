@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Убираем все рамки (например, у input'a) */
+:focus,:active{
+    outline: none;
+}
+/* Конец обнуления */
+
+html{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    
+    color: #1A1423;
+    background-color: #F1FFFA;
+}
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+input[type="text"]{
+    min-height: 40px;
+    min-width: 376px;
+    color: #1A1423;
+    
+    font-weight: 600;
+    font-size: inherit;  /* Само оно почему-то не наследуется от html */
+
+    background-color: #d2e5d9;
+
+    padding: 9px 15px;
+    margin: 30px auto 20px auto;
+    border-bottom: #F1FFFA solid 3px;
+}
+input[type="text"]::placeholder { 
+    color: #1A1423;
+    font-weight: 600;
+    opacity: 0.5;
+}
+input[type="text"]::-webkit-input-placeholder { 
+    color: #1A1423;
+    font-weight: 600;
+    opacity: 0.5;
+}
+input[type="text"]::-moz-placeholder { 
+    color: #1A1423;
+    font-weight: 600;
+    opacity: 0.5;
+}
+input[type="text"]::-ms-input-placeholder { 
+    color: #1A1423;
+    font-weight: 600;
+    opacity: 0.5;
+}
+input[type="text"]:focus::-webkit-input-placeholder {
+    opacity: 0; transition: opacity 0.3s ease;
+}
+input[type="text"]:focus::-moz-placeholder          {
+    opacity: 0; transition: opacity 0.3s ease;
+}
+input[type="text"]:focus:-ms-input-placeholder      {
+    opacity: 0; transition: opacity 0.3s ease;
+}
+
+
+.container{
+    width: 600px;
+    min-height: 84vh;
+    background-color: #d2e5d9;
+    margin: 25px auto 0px auto;
+    border-radius: 15px;
+
+    /* Выравниваем все дочерние элементы по центру */
+    text-align: center;
+
+    /* transition: all 1s; */
+}
+.todo-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 376px;
+    min-height: 40px;
+    margin: 0 auto 5px auto;
+
+    text-align: left;
+}
+.todo-task > p{
+    margin-left: 15px;
+}
+.todo-button{
+    display: flex;
+}
+.todo-button > div{
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 15px;
+    
+}
+.cross, .ok{
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.cross:hover{
+    cursor: pointer;
+    background-color: #a7b3ab;
+
+}
+.ok:hover{
+    cursor: pointer;
+    background-color: #a7b3ab;
+}
+
+/* Для таймера */
+.timer{
+    position: absolute;
+    top: 99px;
+    right: 0;
+
+    width: 363px;
+    height: 200px;
+
+    background-color: #d2e5d9;
+    border-radius: 15px;
+
+    text-align: center;
+}
+h4{
+    padding: 15px 0;
+}
+input[type="time"]{
+    font-size: 20px;
+}
