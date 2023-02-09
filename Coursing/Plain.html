@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="css/reset.css">
+
     <style>
         /* montserrat-regular - latin_cyrillic */
         @font-face {
@@ -112,6 +114,18 @@
             background-size: cover;
             background-position: center;
         }
+        button{
+            width: 217px;
+            height: 48px;
+
+            margin-top: 30px;
+
+            font-size: 20px;
+            font-family: 'Montserrat';
+
+            background-color: #FF9915;
+            border-radius: 40px;
+        }
         #main{
             font-size: 26px;
             padding: 72px 0 30px 0;
@@ -128,7 +142,10 @@
             color: #F7F8F2;
         }
         .UTZ{
-            font-size: 18px;
+            font-size: 20px;
+        }
+        .medium{
+            font-weight: 500;
         }
         .semi-bold{
             font-weight: 600;
@@ -140,11 +157,12 @@
 </head>
 <body>
     <header>
-        <p class="menu"><span class="orange">Курсинг в Пензе!</span> <br>Соревнования - 13.04.2023</p>
+        <p class="menu medium"><span class="orange semi-bold">Курсинг в Пензе!</span> <br>Соревнования - 13.04.2023</p>
     </header>
     <div>
         <h1 id="main"><span class="orange">Примите участие <br>в Чемпионате РКФ</span><span class="white"> <br>по собачьим бегам <br>за механическим зайцем!</span></h1>
         <p class="white UTZ semi-bold"><span class="orange bold">Курсинг</span> — это отличный способ <br>осчастливить вашего питомца.</p>
+        <button class="white bold">Позвонить</button>
     </div>
 </body>
 </html>
