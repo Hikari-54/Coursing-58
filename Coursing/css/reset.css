@@ -3,6 +3,13 @@
    License: none (public domain)
 */
 
+html {
+	box-sizing: border-box;
+  }  
+  *, *::after, *::before{
+	box-sizing: inherit;
+  }
+
 button {
 	padding: 0;
 	border: none;

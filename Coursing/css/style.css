@@ -1,102 +1,129 @@
-/* montserrat-regular - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-/* montserrat-500 - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-/* montserrat-600 - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-/* montserrat-700 - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/montserrat-v25-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v25-latin_cyrillic-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
 
-
-/* playfair-display-regular - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/playfair-display-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/playfair-display-v30-latin_cyrillic-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-/* playfair-display-500 - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/playfair-display-v30-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/playfair-display-v30-latin_cyrillic-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-/* playfair-display-600 - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/playfair-display-v30-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/playfair-display-v30-latin_cyrillic-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-/* playfair-display-700 - latin_cyrillic */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/playfair-display-v30-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('../fonts/playfair-display-v30-latin_cyrillic-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-html {
-  box-sizing: border-box;
-}  
-*, *::after, *::before{
-  box-sizing: inherit;
+p{
+    font-family: 'Montserrat';
+    line-height: 139.8%;
+}
+h1, h2, h3, h4{
+    line-height: 139.8%;
+}
+.menu{
+    font-size: 14px;
 }
 
-
-.wrapper{
-    max-width: 1312px;
-    margin: 0 auto;
-}
-
+/* Начало шапки */
 header{
     height: 80px;
-    padding: 0 62px 0 62px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     background-color: #F7F8F2;
     border-bottom: 0.75px solid #FF9915;
+    padding: 0 15px 0 15px;
 }
+header > div{
+    display: flex;
+    align-items: center;
+}
+.header-button{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    color: #F7F8F2;
+    border-radius: 35px;
 
-#main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#header-call{
+    width: 174px;
+    height: 38px;
+    background-color: #FF9915;
+}
+#header-call-small{
+    display: none;
+}
+#header-tg{
+    width: 254px;
+    height: 38px;
+    background-color: #61ACF6;
+}
+#header-tg-small{
+    display: none;
+}
+#question{
+    width: 38px;
+    height: 38px;
+    border-radius: 35px;
+    background-color: #d6d6d620;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#question > img{
+    width: 12px;
+}
+#burger-wrapper{
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#burger{
+    width: 30px;
+}
+/* Конец шапки */
+
+.UTZ{
     width: 100%;
-    height: 620px;
+    height: 415px;
+    padding: 0 15px 0 15px;
+}
+.UTZ-call{
+    width: 217px;
+    height: 48px;
 
-    background-image: url("../img/main.png");
+    margin-top: 30px;
+
+    font-size: 20px;
+    font-family: 'Montserrat';
+
+    background-color: #FF9915;
+    border-radius: 40px;
+}
+#main{
+    font-size: 26px;
+    padding: 72px 0 30px 0;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+.orange{
+    color: #FF9915;
+}
+.white{
+    color: #F7F8F2;
+}
+.UTZ-text{
+    font-size: 20px;
+}
+.medium{
+    font-weight: 500;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
+}
+#dog{
+
 }
