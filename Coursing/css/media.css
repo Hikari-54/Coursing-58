@@ -1,6 +1,6 @@
 /* Адаптив изображений */
 /* Десктопы */
-@media (min-width: 1312px) {
+@media (min-width: 1024px) {
     /* Шапка */
     header > div > p{
         margin-left: 50px;
@@ -14,15 +14,15 @@
     #header-call{
         margin-right: 50px;
     }
-
     /* Конец шапки */
+
     .UTZ{
         background: url("../img/figma1300.png") center / cover no-repeat;
     }
 }
 
 /* Для планшетов */
-@media (max-width: 1311px) {
+@media (max-width: 1023px) {
     /* Шапка */
     header > div > p{
         margin-left: 30px;
@@ -45,11 +45,24 @@
     #header-call{
         margin-right: 30px;
     }
-
     /* Конец шапки */
+
     .UTZ{
-        background: url("../img/figma720.png") center / cover no-repeat;
+        background: url("../img/figma1300.png") center / cover no-repeat;
+        height: 500px;
     }
+    .UTZ > h1{
+        font-size: 32px;
+    }
+    .UTZ > p{
+        font-size: 20px;
+    }
+    .UTZ > button{
+        width: 217px;
+        height: 48px;
+        font-size: 20px;
+    }
+
 }
 
 /* Для мобильных */
@@ -88,10 +101,24 @@
         border-radius: 35px;
         margin-right: 10px;
     }
-
     /* Конец шапки */
+
     .UTZ{
         background: url("../img/figma480.png") center / cover no-repeat;
+        height: 415px;
     }
+    .UTZ > h1{
+        font-size: 26px;
+        padding-top: 60px;
+    }
+    .UTZ > p{
+        font-size: 20px;
+    }
+    .UTZ > button{
+        width: 217px;
+        height: 48px;
+        font-size: 20px;
+    }
+
 }
 /* -------------------- Конец адаптива -------------------- */
