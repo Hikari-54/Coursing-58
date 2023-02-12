@@ -1,13 +1,42 @@
 
+body{
+    background-color: #F7F8F2;
+}
+h1, h2, h3, p{
+    font-family: 'Playfair Display';
+    line-height: 139.8%;
+}
+h2{
+    display: inline-block;
+    font-size: 32px;
+    margin: 0 25px 0 0;
+}
+h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 p{
-    font-family: 'Montserrat';
-    line-height: 139.8%;
+    font-size: 18px;
 }
-h1, h2, h3, h4{
-    line-height: 139.8%;
+
+
+/* Цвета */
+.orange{
+    color: #FF9915;
 }
-.menu{
-    font-size: 14px;
+.white{
+    color: #F7F8F2;
+}
+
+/* Жирность */
+.medium{
+    font-weight: 500;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
 }
 
 /* Начало шапки */
@@ -25,6 +54,10 @@ header{
     background-color: #F7F8F2;
     border-bottom: 0.75px solid #FF9915;
     padding: 0 30px 0 30px;
+}
+header > div > p{
+    font-family: 'Montserrat';
+    font-size: 14px;
 }
 header > div{
     display: flex;
@@ -88,7 +121,6 @@ header > div{
 .UTZ{
     width: 100%;
     height: 620px;
-    padding: 0 30px 0 30px;
 }
 .UTZ > h1{
     font-size: 44px;
@@ -99,6 +131,7 @@ header > div{
     font-weight: 700;
 }
 .UTZ > p{
+    font-family: 'Montserrat';
     font-size: 28px;
 }
 .UTZ > button{
@@ -115,19 +148,48 @@ header > div{
 }
 /* ---------------------------------------- */
 
-.orange{
-    color: #FF9915;
+/* Что такое курсинг? */
+
+section{
+    max-width: 100%;
+    padding: 30px;
 }
-.white{
-    color: #F7F8F2;
+.grid{
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 32px;
 }
 
-.medium{
-    font-weight: 500;
+.divider{
+    display: inline-block;
+    height: 1px;
+    box-shadow: 0 0.75px black;
+
+    flex-grow: 1;
 }
-.semi-bold{
-    font-weight: 600;
+.divider-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
 }
-.bold{
-    font-weight: 700;
+/* Поменять местами блоки для декстопной версии */
+#what2-text{
+    order: 2;
 }
+#what2-img{
+    order: 1;
+
+}
+
+section img{
+    width: 100%;
+    align-self: center;
+}
+
+/* ---------------------------------------- */
+
+
