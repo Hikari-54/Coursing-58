@@ -9,10 +9,13 @@ h1, h2, h3, p{
 h2{
     display: inline-block;
     font-size: 32px;
+    font-weight: 500;
+    color: #FF8A00;
     margin: 0 25px 0 0;
 }
 h3{
     font-size: 24px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 p{
@@ -22,7 +25,7 @@ p{
 
 /* Цвета */
 .orange{
-    color: #FF9915;
+    color: #FF8A00;
 }
 .white{
     color: #F7F8F2;
@@ -151,12 +154,12 @@ header > div{
 /* Что такое курсинг? */
 
 section{
-    max-width: 100%;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
+}
+#what-is-coursing{
+    padding-top: 30px;
 }
 .grid{
-    max-width: 100%;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px 32px;
@@ -176,13 +179,13 @@ section{
 
     margin-bottom: 30px;
 }
+
 /* Поменять местами блоки для декстопной версии */
 #what2-text{
     order: 2;
 }
 #what2-img{
     order: 1;
-
 }
 
 section img{
@@ -192,4 +195,21 @@ section img{
 
 /* ---------------------------------------- */
 
+/* Правила проведения */
+li{
+    list-style: disc inside;
+
+    font-family: 'Playfair Display';
+    line-height: 139.8%;
+    font-size: 18px;
+}
+
+#rules2-text{
+    order: 2;
+}
+#rules2-img{
+    order: 1;
+}
+
+/* ---------------------------------------- */
 
