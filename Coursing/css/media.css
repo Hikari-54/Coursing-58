@@ -78,7 +78,7 @@
     }
 
     /* Что такое курсинг? */
-    .grid{
+    .grid_1-1{
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
     }
@@ -100,6 +100,14 @@
     }
     #rules2-img{
         order: 2;
+    }
+
+    /* Запишитесь на тренировки */
+    #training-text{
+        order: 2;
+    }
+    #training-img{
+        order: 1;
     }
 }
 
@@ -177,7 +185,7 @@
     section{
         padding: 0 15px 30px 15px;
     }
-    .grid{
+    .grid_1-1{
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
     }
@@ -206,6 +214,13 @@
         grid-template-columns: 1fr;
     }
     
+    /* Запишитесь на тренировки */
+    #training-text{
+        order: 2;
+    }
+    #training-img{
+        order: 1;
+    }
 
 }
 /* -------------------- Конец адаптива -------------------- */

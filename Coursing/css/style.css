@@ -161,7 +161,7 @@ section{
 #what-is-coursing{
     padding-top: 30px;
 }
-.grid{
+.grid_1-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px 32px;
@@ -215,7 +215,6 @@ li{
 /* ---------------------------------------- */
 
 /* Когда и где (Map) */
-
 .grid-map{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -231,4 +230,28 @@ li{
 #map-wrap iframe{
     pointer-events: none;
 }
+/* ---------------------------------------- */
+
+/* Об организаторе */
+
+
+/* ---------------------------------------- */
+
+/* Запишитесь на тренировки */
+#training button{
+    width: 295px;
+    height: 65px;
+
+    display: block;
+    margin: 30px auto 0 auto;
+
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #F7F8F2;
+
+    background-color: #FF9915;
+    border-radius: 40px;
+}
+
 /* ---------------------------------------- */
