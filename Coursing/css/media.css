@@ -1,4 +1,5 @@
 /* Адаптив изображений */
+
 /* Десктопы */
 @media (min-width: 1024px) {
     /* Шапка */
@@ -30,6 +31,9 @@
     h3{
         font-size: 24px;
     }
+    p, li{
+        font-size: 16px;
+    }
     /* ---------------------------- */
 
     /* Шапка */
@@ -56,6 +60,7 @@
     }
     /* Конец шапки */
 
+    /* УТЗ */
     .UTZ{
         background: url("../img/figma1300.png") center / cover no-repeat;
         height: 500px;
@@ -72,10 +77,46 @@
         font-size: 20px;
     }
 
+    /* Что такое курсинг? */
+    .grid{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    #what2-text{
+        order: 1;
+    }
+    #what2-img{
+        order: 2;
+    }
+    section img{
+        width: 87.5%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    /* Правила проведения */
+    #rules2-text{
+        order: 1;
+    }
+    #rules2-img{
+        order: 2;
+    }
 }
 
 /* Для мобильных */
 @media (max-width: 719px) {
+    /* --- УТОЧНИ --- */
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    p, li{
+        font-size: 16px;
+    }
+    /* ---------------------------- */
+
     /* Шапка */
     header > div > p{
         margin-left: 10px;
@@ -127,6 +168,31 @@
         width: 217px;
         height: 48px;
         font-size: 20px;
+    }
+
+    /* Что такое курсинг? */
+    .grid{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    #what2-text{
+        order: 1;
+    }
+    #what2-img{
+        order: 2;
+    }
+    section img{
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    /* Правила проведения */
+    #rules2-text{
+        order: 1;
+    }
+    #rules2-img{
+        order: 2;
     }
 
 }
