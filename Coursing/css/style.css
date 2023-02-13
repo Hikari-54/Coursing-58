@@ -253,5 +253,27 @@ li{
     background-color: #FF9915;
     border-radius: 40px;
 }
-
 /* ---------------------------------------- */
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background: #F7F8F2;
+    border-top: 0.75px solid #FF9915;
+    padding: 30px 25px 30px 25px;
+}
+footer p{
+    font-size: 14px;
+}
+footer > div{
+    padding: 0 15px 0 15px;
+}
+
+.social{
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    background-color: #D9D9D9;
+}
