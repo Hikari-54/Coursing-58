@@ -109,6 +109,18 @@
     #training-img{
         order: 1;
     }
+
+    /* Отзывы */
+    .grid-review{
+        grid-template-columns: 1fr 1px 1fr;
+    }
+    #review-card-3{
+        align-self: center;
+        justify-self: center;
+    }
+    #transparent-divider-2{
+        display: none;
+    }
 }
 
 /* Для мобильных */
