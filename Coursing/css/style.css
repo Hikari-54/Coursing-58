@@ -195,7 +195,6 @@ section img{
     justify-self: center;
     align-self: center;
 }
-
 /* ---------------------------------------- */
 
 /* Правила проведения */
@@ -213,6 +212,23 @@ li{
 #rules2-img{
     order: 1;
 }
-
 /* ---------------------------------------- */
 
+/* Когда и где (Map) */
+
+.grid-map{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px 32px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
+
+#map-wrap iframe{
+    pointer-events: none;
+}
+/* ---------------------------------------- */
