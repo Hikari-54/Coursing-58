@@ -234,6 +234,27 @@ section img{
     text-align: center;
     margin: 0 auto;
 }
+#curved-1{
+    position: absolute;
+    top: 100px;
+    left: 15.5%;
+    width: 22%;
+    /* width: 44.3%; Это для двух строк по 2 в каждой */
+}
+#curved-2{
+    position: absolute;
+    top: 100px;
+    left: 39.5%;
+    width: 22%;
+    /* width: 44.3%; Это для двух строк по 2 в каждой */
+}
+#curved-3{
+    position: absolute;
+    top: 100px;
+    left: 63.8%;
+    width: 22%;
+    /* width: 44.3%; Это для двух строк по 2 в каждой */
+}
 
 /* ---------------------------------------- */
 

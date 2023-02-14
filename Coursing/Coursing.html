@@ -90,7 +90,9 @@
                 <h2>Плюсы курсинга</h2>
                 <div class="divider"></div>
             </div>
-
+            <img id="curved-1" src="svg/curved-dotted-line.svg" alt="">
+            <img id="curved-2" src="svg/curved-dotted-line.svg" alt="">
+            <img id="curved-3" src="svg/curved-dotted-line.svg" alt="">
             <div id="plusses-flex-wrap">
                 <div class="plusses-flex-item">
                     <img src="svg/paw.svg" alt="Лапа собаки">
@@ -312,6 +314,33 @@
     </footer>
 
 
+    <!-- Для изогнутых пунктирных линий в Плюсах курсинга  -->
+    <script>
+        window.addEventListener('load', (e) => {
+            console.log(document.querySelector("header").offsetHeight);
+            console.log(document.querySelector(".UTZ").offsetHeight);
+            console.log(document.querySelector("section#what-is-coursing").offsetHeight);
+
+            let absolute_height = document.querySelector("header").offsetHeight +
+            document.querySelector(".UTZ").offsetHeight +
+            document.querySelector("#what-is-coursing").offsetHeight + 90;
+            
+            document.querySelector("#curved-1").style.top = `${absolute_height}px`;
+            document.querySelector("#curved-2").style.top = `${absolute_height}px`;
+            document.querySelector("#curved-3").style.top = `${absolute_height}px`;
+
+        });
+        
+        window.addEventListener('resize', (e) => {
+            absolute_height = document.querySelector("header").offsetHeight +
+            document.querySelector(".UTZ").offsetHeight +
+            document.querySelector("#what-is-coursing").offsetHeight + 90;
+            
+            document.querySelector("#curved-1").style.top = `${absolute_height}px`;
+            document.querySelector("#curved-2").style.top = `${absolute_height}px`;
+            document.querySelector("#curved-3").style.top = `${absolute_height}px`;
+        });
+    </script>
     <!-- Для секции с отзывом - убирает разделители при перестроении -->
     <script>
         window.addEventListener('resize', (e) => {
