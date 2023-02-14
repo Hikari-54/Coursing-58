@@ -197,6 +197,46 @@ section img{
 }
 /* ---------------------------------------- */
 
+/* Плюсы курсинга */
+#plusses .divider-flex{
+    margin: 0;
+}
+#plusses-flex-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.plusses-flex-item{
+    min-width: 200px;
+    margin: 30px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 23.28%;
+}
+.plusses-item-divider{
+    display: block;
+    width: 1px;
+    height: 100px;
+    background-color: black;
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+.plusses-flex-item img{
+    width: 70px;
+    margin: 15px 0;
+}
+#plusses p{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------- */
+
 /* Правила проведения */
 li{
     list-style: disc inside;

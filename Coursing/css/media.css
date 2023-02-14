@@ -232,4 +232,33 @@
         padding: 0 5px 0 5px;
     }
 }
+
+/* Для секции с плюсами курсинга */
+@media (max-width: 490px) {
+    .plusses-flex-item{
+        flex-basis: 60%;
+    }
+    #plusses-item-divider-1{
+        display: none;
+    }
+    #plusses-item-divider-2{
+        display: none;
+    }
+    #plusses-item-divider-3{
+        display: none;
+    }
+}
+@media (max-width: 950px) {
+    #plusses-flex-wrap{
+        flex-wrap: wrap;
+    }
+    .plusses-flex-item{
+        flex-basis: 40%;
+    }
+    #plusses-item-divider-2{
+        display: none;
+    }
+}
+
+
 /* -------------------- Конец адаптива -------------------- */
