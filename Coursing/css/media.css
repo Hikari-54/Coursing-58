@@ -241,8 +241,26 @@
     .plusses-flex-item{
         flex-basis: 40%;
     }
+    .plusses-item-divider{
+        margin-bottom: 15px;
+    }
     #plusses-item-divider-2{
         display: none;
+    }
+    #curved-1{
+        position: absolute;
+        top: 100px;
+        left: 32%;
+        width: 38.3%;
+    }
+    #curved-2{
+        display: none;
+    }
+    #curved-3{
+        position: absolute;
+        top: 100px;
+        left: 32%;
+        width: 38.3%;
     }
 }
 @media (max-width: 490px) {
@@ -256,6 +274,15 @@
         display: none;
     }
     #plusses-item-divider-3{
+        display: none;
+    }
+    #curved-1{
+        display: none;
+    }
+    #curved-2{
+        display: none;
+    }
+    #curved-3{
         display: none;
     }
 }
