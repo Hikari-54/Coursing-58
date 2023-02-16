@@ -24,7 +24,7 @@
             </p>
         </div>
         <div>
-            <a href="callto:+79273628581" id="header-call" class="header-button">
+            <a href="tel:+79273628581" id="header-call" class="header-button">
                 <img src="svg/phone.svg" alt="Позвонить">
                 <div>+7 927 362-85-81</div>
             </a>
@@ -305,7 +305,7 @@
         <div>
             <p>
                 <span class="semi-bold">E-mail:</span> <a href="mailto:nika_dogs@bk.ru">nika_dogs@bk.ru</a>
-                <br><span class="semi-bold">Телефон:</span> +7 927 362-85-81
+                <br><span class="semi-bold">Телефон:</span> <a href="tel:+79273628581">+7 927 362-85-81</a>
                 <br><span class="semi-bold">Адрес:</span> г. Пенза, ул. Титова д.3 
                 <br><span class="semi-bold">График работы:</span> Пн-пт 10:00 - 18:00
             </p>
@@ -318,10 +318,6 @@
     <script>
         // При загрузке
         window.addEventListener('load', (e) => {
-            console.log(document.querySelector("header").offsetHeight);
-            console.log(document.querySelector(".UTZ").offsetHeight);
-            console.log(document.querySelector("section#what-is-coursing").offsetHeight);
-
             let absolute_height = document.querySelector("header").offsetHeight +
             document.querySelector(".UTZ").offsetHeight +
             document.querySelector("#what-is-coursing").offsetHeight + 90;
