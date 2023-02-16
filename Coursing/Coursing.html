@@ -379,6 +379,22 @@
 
     <!-- Для секции с отзывом - убирает разделители при перестроении -->
     <script>
+        // При загрузке
+        window.addEventListener('load', (e) => {
+            var w = document.documentElement.clientWidth;
+            if (w <= 1021){
+                document.querySelector("#transparent-divider-2").style.display = "none";
+            } else{
+                document.querySelector("#transparent-divider-2").style.display = "block";
+            }
+
+            if (w <= 675){
+                document.querySelector("#transparent-divider-1").style.display = "none";
+            } else{
+                document.querySelector("#transparent-divider-1").style.display = "block";
+            }
+        });
+        // При изменении размера
         window.addEventListener('resize', (e) => {
             var w = document.documentElement.clientWidth;
             if (w <= 1021){

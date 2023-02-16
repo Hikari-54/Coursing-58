@@ -117,10 +117,10 @@
 @media (max-width: 719px) {
     /* --- УТОЧНИ --- */
     h2{
-        font-size: 28px;
+        font-size: 25px;
     }
     h3{
-        font-size: 24px;
+        font-size: 22px;
     }
     p, li{
         font-size: 16px;
@@ -132,6 +132,7 @@
         padding: 0 5px 0 5px;
     }
     header > div > p{
+        font-size: 12px;
         margin-left: 10px;
     }
     #question{
@@ -232,7 +233,11 @@
     footer > div{
         padding: 0 5px 0 5px;
     }
+    footer p{
+        font-size: 12px;
+    }
 }
+
 
 /* Для секции с плюсами курсинга */
 @media (max-width: 950px) {
