@@ -186,7 +186,7 @@
 
     /* Что такое курсинг? */
     section{
-        padding: 0 15px 30px 15px;
+        padding: 0 30px 30px 30px;
     }
     .grid_1-1{
         grid-template-columns: 1fr;
@@ -319,7 +319,7 @@
 
     /* УТЗ */
     section{
-        padding: 0 10px 30px 10px;
+        padding: 0 20px 30px 20px;
     }
     .UTZ{
         height: 520px;
