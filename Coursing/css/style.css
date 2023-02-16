@@ -140,6 +140,7 @@ header > div{
     font-weight: 700;
 }
 .UTZ > p{
+    max-width: 450px;
     font-family: 'Montserrat';
     font-size: 28px;
 }

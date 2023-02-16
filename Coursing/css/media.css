@@ -173,7 +173,7 @@
     }
     .UTZ > h1{
         font-size: 26px;
-        padding-top: 60px;
+        padding-top: 70px;
     }
     .UTZ > p{
         font-size: 20px;
@@ -237,6 +237,105 @@
         font-size: 12px;
     }
 }
+
+/* Для малых мобильных */
+@media (max-width: 450px) {
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    /* Шапка */
+    #logo-wrapper{
+        width: 60px;
+        height: 45px;
+    }
+    #logo-wrapper img{
+        width: 60px;
+        height: 45px;
+    }
+
+    header > div > p{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    #burger-wrapper{
+        width: 30px;
+        height: 30px;
+    }
+    #burger-wrapper img{
+        width: 21px;
+        height: 15px;
+    }
+    #question{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    #question img{
+        width: 9px;
+    }
+
+    #header-tg{
+        display: none;
+    }
+    #header-tg-small{
+        display: block;
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+    }
+    #header-tg-small > img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #header-call{
+        display: none;
+    }
+    #header-call-small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+
+        background-color: #FF9915;
+        border-radius: 35px;
+        margin-right: 10px;
+    }
+    #header-call-small img{
+        width: 17px;
+        height: 17px;
+    }
+
+    /* УТЗ */
+    .UTZ{
+        height: 500px;
+    }
+    .UTZ h1{
+        padding-top: 95px;
+    }
+
+    /* Плюсы курсинга */
+    .plusses-flex-item {
+        flex-basis: 80%;
+    }
+
+    /* Тренировки */
+    #training a {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
 
 
 /* Для секции с плюсами курсинга */
