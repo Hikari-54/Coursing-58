@@ -386,10 +386,7 @@ li{
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    /* display: flex;
-    align-items: flex-start;
-    justify-content: space-between; */
+    grid-gap: 10px;
 
     background: #F7F8F2;
     border-top: 0.75px solid #FF9915;
