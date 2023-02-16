@@ -129,7 +129,7 @@
 
     /* Шапка */
     header{
-        padding: 0 5px 0 5px;
+        padding: 0 15px 0 15px;
     }
     header > div > p{
         font-size: 12px;
@@ -186,7 +186,7 @@
 
     /* Что такое курсинг? */
     section{
-        padding: 0 5px 30px 5px;
+        padding: 0 15px 30px 15px;
     }
     .grid_1-1{
         grid-template-columns: 1fr;
@@ -228,10 +228,10 @@
     /* Footer */
     footer{
         grid-template-columns: 1fr 1fr;
-        padding: 30px 5px;
+        padding: 30px 15px;
     }
     footer > div{
-        padding: 0 5px 0 5px;
+        padding: 0 5px;
     }
     footer p{
         font-size: 12px;
@@ -259,7 +259,9 @@
         width: 60px;
         height: 45px;
     }
-
+    header{
+        padding: 0 10px;
+    }
     header > div > p{
         font-size: 10px;
         margin-left: 5px;
@@ -316,8 +318,11 @@
     }
 
     /* УТЗ */
+    section{
+        padding: 0 10px 30px 10px;
+    }
     .UTZ{
-        height: 500px;
+        height: 520px;
     }
     .UTZ h1{
         padding-top: 115px;
@@ -333,6 +338,10 @@
         width: 200px;
         height: 50px;
         font-size: 20px;
+    }
+
+    footer{
+        padding: 30px 10px;
     }
 }
 
