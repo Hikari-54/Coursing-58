@@ -180,7 +180,7 @@ section{
 .divider{
     display: inline-block;
     height: 1px;
-    box-shadow: 0 0.75px black;
+    box-shadow: 0 1px black;
 
     flex-grow: 1;
 }
@@ -192,7 +192,7 @@ section{
     margin-bottom: 30px;
 }
 
-/* Поменять местами блоки для декстопной версии */
+/* Поменяем местами блоки для декстопной версии */
 #what2-text{
     order: 2;
 }
@@ -262,8 +262,56 @@ section img{
     left: 63.8%;
     width: 22%;
 }
+/* ---------------------------------------- */
+
+/* Плюсы курсинга */
+
+#criteria p{
+    text-align: center;
+}
+#criteria-flex-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+#criteria-flex-wrap h3{
+    margin-bottom: 10px;
+}
+.criteria-flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 17.5%;
+    
+    min-width: 230px;
+    margin: 0 15px 30px 15px;
+}
+
+.scores{
+    display: flex;
+    margin-bottom: 10px;
+}
+.scores img{
+    display: inline-block;
+    width: 19px;
+}
+.scores p{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.criteria-item-divider{
+    height: 110px;
+    width: 1px;
+    background-color: black;
+
+    align-self: center;
+}
 
 /* ---------------------------------------- */
+
 
 /* Правила проведения */
 li{
