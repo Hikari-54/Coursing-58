@@ -122,6 +122,69 @@
             </p>
         </section>
 
+        <!-- Для изогнутых пунктирных линий в Плюсах курсинга  -->
+        <script>
+            // При загрузке
+            window.addEventListener('load', (e) => {
+                let absolute_height = document.querySelector("header").offsetHeight +
+                document.querySelector(".UTZ").offsetHeight +
+                document.querySelector("#what-is-coursing").offsetHeight + 90;
+
+                document.querySelector("#curved-1").style.top = `${absolute_height}px`;
+                document.querySelector("#curved-2").style.top = `${absolute_height}px`;
+                
+                // Вычисление положения третей кривой
+                if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+                }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
+                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
+                    // Немного увеличим разделители между карточками
+                    document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
+                    document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
+                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
+                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
+                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+                } else{
+                    document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
+                }
+            });
+
+            // При изменении размера страницы
+            window.addEventListener('resize', (e) => {
+                absolute_height = document.querySelector("header").offsetHeight +
+                document.querySelector(".UTZ").offsetHeight +
+                document.querySelector("#what-is-coursing").offsetHeight + 90;
+                
+                document.querySelector("#curved-1").style.top = `${absolute_height}px`;
+                document.querySelector("#curved-2").style.top = `${absolute_height}px`;
+                
+                // Вычисление положения третей кривой
+                if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+                }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
+                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
+                    // Немного увеличим разделители между карточками
+                    document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
+                    document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
+                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
+                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
+                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
+                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+                } else{
+                    document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
+                }
+            });
+        </script>
+
         <section id="criteria">
             <div class="divider-flex">
                 <h2>Критерии оценки</h2>
@@ -382,69 +445,6 @@
 
     </footer>
 
-
-    <!-- Для изогнутых пунктирных линий в Плюсах курсинга  -->
-    <script>
-        // При загрузке
-        window.addEventListener('load', (e) => {
-            let absolute_height = document.querySelector("header").offsetHeight +
-            document.querySelector(".UTZ").offsetHeight +
-            document.querySelector("#what-is-coursing").offsetHeight + 90;
-
-            document.querySelector("#curved-1").style.top = `${absolute_height}px`;
-            document.querySelector("#curved-2").style.top = `${absolute_height}px`;
-            
-            // Вычисление положения третей кривой
-            if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-            }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
-            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
-                // Немного увеличим разделители между карточками
-                document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
-                document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
-            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
-            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
-            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-            } else{
-                document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
-            }
-        });
-
-        // При изменении размера страницы
-        window.addEventListener('resize', (e) => {
-            absolute_height = document.querySelector("header").offsetHeight +
-            document.querySelector(".UTZ").offsetHeight +
-            document.querySelector("#what-is-coursing").offsetHeight + 90;
-            
-            document.querySelector("#curved-1").style.top = `${absolute_height}px`;
-            document.querySelector("#curved-2").style.top = `${absolute_height}px`;
-            
-            // Вычисление положения третей кривой
-            if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-            }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
-            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
-                // Немного увеличим разделители между карточками
-                document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
-                document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
-            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
-            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
-            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
-                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-            } else{
-                document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
-            }
-        });
-    </script>
 
     <!-- Для секции с отзывом - убирает разделители при перестроении -->
     <script>
