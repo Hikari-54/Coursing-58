@@ -345,7 +345,58 @@
     }
 }
 
+/* Для секции с критериями курсинга */
+@media (max-width: 1363px) {
+    #new-line-3{
+        width: 100%;
+    }
+    #criteria-item-divider-3{
+        display: none;
+    }
+}
+@media (max-width: 841px) {
+    #new-line-2{
+        width: 100%;
+    }
+    #new-line-3{
+        display: none;
+    }
+    #new-line-4{
+        width: 100%;
+    }
+    #criteria-item-divider-2{
+        display: none;
+    }
+    #criteria-item-divider-3{
+        display: block;
+    }
+    #criteria-item-divider-4{
+        display: none;
+    }
+}
+@media (max-width: 580px) {
+    #new-line-1{
+        width: 100%;
+    }
+    #new-line-2{
+        width: 100%;
+    }
+    #new-line-3{
+        display: block;
+        width: 100%;
+    }
+    #new-line-4{
+        width: 100%;
+    }
+    #criteria-item-divider-1{
+        display: none;
+    }
+    #criteria-item-divider-3{
+        display: none;
+    }
+}
 
+/* -------------------- Конец адаптива -------------------- */
 
 /* Для секции с плюсами курсинга */
 @media (max-width: 950px) {
