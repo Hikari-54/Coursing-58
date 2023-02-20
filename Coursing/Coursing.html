@@ -68,9 +68,13 @@
                 <div>
                     <h3>История</h3>
                     <p>
-                        Исторически курсинг родом из Великобритании, где он появился еще в XVI веке. Перед охотой собак “разогревали”, натравливая их на живого зайца.
-                        <br>Тогда охота с борзыми была популярным развлечением знати. Однако, со временем поголовье диких животных начало сокращаться, и на охоту был наложен ряд ограничений.
-                        <br>Тогда на помощь пришел курсинг. Он помог поддерживать физическую форму собак гончих пород и их рабочие качества.
+                        Курсинг зародился в Великобритании XVI века. Тогда собак подготавливали к охоте, “разогревая” погоней за живым зайцем.
+                    </p>
+                    <p>
+                        Охота с породистыми борзыми была крайне любима аристократами. Однако далее поголовье диких животных сокращалось и в результате на охоту были наложены ограничения, ужесточающиеся с течением времени.
+                    </p>
+                    <p>
+                        Тогда дворяне начали активнее прибегать к курсингу как к способу поддержания рабочих качеств гончих пород.
                     </p>
                 </div>
                 <img src="img/what1.png" alt="Ивийская борзая, поймавшая приманку">
@@ -78,9 +82,13 @@
                 <div id="what2-text">
                     <h3>Сейчас</h3>
                     <p>
-                        Позже курсинг стал видом кинологического спорта – полевыми испытаниями с приманкой, имитирующими охоту за диким зверем и его поимку. В виде наживки применяют как натуральные, так и искусственные материалы.
-                        <br>Приманка движется по заданной траектории с помощью особого механизма - электромотора с катушкой, на которую намотан шнур с приманкой. 
-                        <br>Трасса формируется с поворотами под углами разной сложности.
+                        Курсинг является одним из видов кинологического спорта, признанных Международной Кинологической Федерацией.
+                    </p>
+                    <p>
+                        Также он стал гораздо более гуманным, вместо живого зайца используют его механический аналог — приманку из натуральных или искусственных материалов, крепящуюся шнуром к катушке и приводимую в движение электромотором.
+                    </p>
+                    <p>
+                        Трасса формируется особым образом, чтобы имитировать движение дичи. Повороты закладываются под острыми и тупыми углами, чтобы сделать задачу для участников более интересной и сложной.
                     </p>
                 </div>
                 <img id="what2-img" src="img/what2.png" alt="Электромотор с катушкой, которая тянет приманку по трассе">
@@ -121,69 +129,6 @@
                 <span class="medium">то напрасно</span>, собака хорошо различает охотничью и повседневную реальности.
             </p>
         </section>
-
-        <!-- Для изогнутых пунктирных линий в Плюсах курсинга  -->
-        <script>
-            // При загрузке
-            window.addEventListener('load', (e) => {
-                let absolute_height = document.querySelector("header").offsetHeight +
-                document.querySelector(".UTZ").offsetHeight +
-                document.querySelector("#what-is-coursing").offsetHeight + 90;
-
-                document.querySelector("#curved-1").style.top = `${absolute_height}px`;
-                document.querySelector("#curved-2").style.top = `${absolute_height}px`;
-                
-                // Вычисление положения третей кривой
-                if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-                }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
-                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
-                    // Немного увеличим разделители между карточками
-                    document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
-                    document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
-                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
-                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
-                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-                } else{
-                    document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
-                }
-            });
-
-            // При изменении размера страницы
-            window.addEventListener('resize', (e) => {
-                absolute_height = document.querySelector("header").offsetHeight +
-                document.querySelector(".UTZ").offsetHeight +
-                document.querySelector("#what-is-coursing").offsetHeight + 90;
-                
-                document.querySelector("#curved-1").style.top = `${absolute_height}px`;
-                document.querySelector("#curved-2").style.top = `${absolute_height}px`;
-                
-                // Вычисление положения третей кривой
-                if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-                }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
-                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
-                    // Немного увеличим разделители между карточками
-                    document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
-                    document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
-                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
-                } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
-                } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
-                    document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
-                } else{
-                    document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
-                }
-            });
-        </script>
 
         <section id="criteria">
             <div class="divider-flex">
@@ -329,13 +274,13 @@
 
                 </div>
 
-                <div class="map-wrap">
+                <div id="map-wrap">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A33d7102f6725d0e532aee8bc50fae175108cbeaf0023ebc87aff5a3e8260fcf7&amp;source=constructor&amp;scroll=false" width="100%" height="400" frameborder="0"></iframe>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="organizer">
             <div class="divider-flex">
                 <h2>Об организаторе</h2>
                 <div class="divider"></div>
@@ -360,7 +305,7 @@
                 <div id="training-text">
                     <h3>К тренировкам допускаются собаки всех пород, вне зависимости от наличия родословной РКФ.</h3>
                     <p>
-                        <span class="semi-bold">Мы регулярно (<span class="orange">каждую субботу и воскресенье</span>) проводим тренировки по курсингу</span>, в которых вы можете принять участие! 
+                        <span class="semi-bold">Мы регулярно (<span class="orange">каждое воскресенье</span>) проводим тренировки по курсингу</span>, в которых вы можете принять участие! 
                         <br>Собаки были созданы для активного образа жизни, поэтому невозможность выплеснуть копящуюся энергию — большой стресс для них.
                         <br><span class="semi-bold">Правильный</span>, соответствующий нуждам собаки, <span class="semi-bold">уровень нагрузки сделает вашего питомца счастливее и послушнее</span>, что предотвратит деструктивное поведение в будущем. 
                     </p>
@@ -445,6 +390,68 @@
 
     </footer>
 
+    <!-- Для изогнутых пунктирных линий в Плюсах курсинга  -->
+    <script>
+        // При загрузке
+        window.addEventListener('load', (e) => {
+            let absolute_height = document.querySelector("header").offsetHeight +
+            document.querySelector(".UTZ").offsetHeight +
+            document.querySelector("#what-is-coursing").offsetHeight + 90;
+
+            document.querySelector("#curved-1").style.top = `${absolute_height}px`;
+            document.querySelector("#curved-2").style.top = `${absolute_height}px`;
+            
+            // Вычисление положения третей кривой
+            if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+            }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
+            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
+                // Немного увеличим разделители между карточками
+                document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
+                document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
+            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
+            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
+            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+            } else{
+                document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
+            }
+        });
+
+        // При изменении размера страницы
+        window.addEventListener('resize', (e) => {
+            absolute_height = document.querySelector("header").offsetHeight +
+            document.querySelector(".UTZ").offsetHeight +
+            document.querySelector("#what-is-coursing").offsetHeight + 90;
+            
+            document.querySelector("#curved-1").style.top = `${absolute_height}px`;
+            document.querySelector("#curved-2").style.top = `${absolute_height}px`;
+            
+            // Вычисление положения третей кривой
+            if (document.querySelector("#what-is-coursing").offsetWidth <= 541){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+            }else if(document.querySelector("#what-is-coursing").offsetWidth <= 619){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.5}px`;
+            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 726){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.6}px`;
+                // Немного увеличим разделители между карточками
+                document.querySelector("#plusses-item-divider-1").style.height = `${135}px`;
+                document.querySelector("#plusses-item-divider-3").style.height = `${135}px`;
+            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 800){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.45}px`;
+            } else if (document.querySelector("#what-is-coursing").offsetWidth <= 900){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.4}px`;
+            } else if(document.querySelector("#what-is-coursing").offsetWidth <= 950){
+                document.querySelector("#curved-3").style.top = `${absolute_height + document.querySelector("#plusses-flex-item-1").offsetHeight * 1.35}px`;
+            } else{
+                document.querySelector("#curved-3").style.top = `${absolute_height}px`;            
+            }
+        });
+    </script>    
 
     <!-- Для секции с отзывом - убирает разделители при перестроении -->
     <script>

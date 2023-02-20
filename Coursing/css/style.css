@@ -171,6 +171,9 @@ section{
 #what-is-coursing{
     padding-top: 30px;
 }
+#what-is-coursing p{
+    text-indent: 1em;
+}
 .grid_1-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -343,12 +346,15 @@ li{
 }
 
 #map-wrap iframe{
-    pointer-events: none;
+    border-radius: 3px;
 }
 /* ---------------------------------------- */
 
 /* Об организаторе */
 
+#organizer img{
+    border-radius: 3px;
+}
 
 /* ---------------------------------------- */
 
