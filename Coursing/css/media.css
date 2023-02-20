@@ -399,7 +399,7 @@
 /* --------------------------------------- */
 
 /* Для секции с плюсами курсинга */
-@media (max-width: 950px) {
+@media (max-width: 980px) {
     #plusses-flex-wrap{
         flex-wrap: wrap;
     }
