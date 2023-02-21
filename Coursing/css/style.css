@@ -316,6 +316,9 @@ section img{
 
 
 /* Правила проведения */
+#rules p{
+    text-indent: 1em;
+}
 li{
     list-style: disc inside;
 
