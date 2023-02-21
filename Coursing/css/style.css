@@ -59,6 +59,7 @@ header{
 
     background-color: #F7F8F2;
     border-bottom: 0.75px solid #FF9915;
+    box-shadow: 0 3px 10px 0px #ff99154f;
     padding: 0 30px;
 }
 header a{
@@ -455,6 +456,7 @@ footer{
 
     background: #F7F8F2;
     border-top: 0.75px solid #FF9915;
+    box-shadow: 0px 0px 20px 0px #ff99154f;
     padding: 30px 25px;
 }
 footer p{
@@ -463,9 +465,11 @@ footer p{
 footer > div{
     padding: 0 15px 0 15px;
 }
-.social{
+#socials p{
+    margin-bottom: 10px;
+}
+#socials a{
     display: inline-block;
-    width: 80px;
-    height: 50px;
-    background-color: #D9D9D9;
+    width: 35px;
+    height: 35px;
 }
