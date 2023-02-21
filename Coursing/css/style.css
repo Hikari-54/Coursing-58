@@ -336,6 +336,9 @@ li{
 /* ---------------------------------------- */
 
 /* Когда и где (Map) */
+#when p, .indent{
+    text-indent: 1em;
+}
 .grid-map{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -354,7 +357,9 @@ li{
 /* ---------------------------------------- */
 
 /* Об организаторе */
-
+#organizer p{
+    text-indent: 1em;
+}
 #organizer img{
     border-radius: 3px;
 }
@@ -380,6 +385,9 @@ li{
 
     background-color: #FF9915;
     border-radius: 40px;
+}
+#training p{
+    text-indent: 1em;
 }
 /* ---------------------------------------- */
 
