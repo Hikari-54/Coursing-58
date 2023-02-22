@@ -452,4 +452,36 @@
     }
 }
 
+/* Для секции с отзывами */
+@media (max-width: 1661px) {
+    #transparent-divider-2{
+        display: none;
+    }
+    #new-line-6{
+        width: 100%;
+    }
+    .review-card-divider{
+        height: 300px;
+    }
+    #review-card-2{
+        margin-right: 0;
+    }
+    #review-card-3{
+        margin: 0;
+    }
+}
+@media (max-width: 1135px) {
+    #transparent-divider-1{
+        display: none;
+    }
+    #new-line-5{
+        width: 100%;
+    }
+    #review-card-1{
+        margin: 0;
+    }
+    #review-card-2{
+        margin: 0;
+    }
+}
 /* -------------------- Конец адаптива -------------------- */

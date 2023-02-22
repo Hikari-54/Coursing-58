@@ -360,6 +360,7 @@
                     </p>
                 </div>
                 <div class="review-card-divider" id="transparent-divider-1"></div>
+                <div id="new-line-5"></div>
                 <div class="review-card"  id="review-card-2">
                     <img class="profile-img" src="" alt="">
                     <h3>Анастасия</h3>
@@ -370,6 +371,7 @@
                     </p>
                 </div>
                 <div class="review-card-divider" id="transparent-divider-2"></div>
+                <div id="new-line-6"></div>
                 <div class="review-card" id="review-card-3">
                     <img class="profile-img" src="" alt="">
                     <h3>Дарья</h3>
@@ -479,38 +481,5 @@
         });
     </script>    
 
-    <!-- Для секции с отзывом - убирает разделители при перестроении -->
-    <script>
-        // При загрузке
-        window.addEventListener('load', (e) => {
-            var w = document.documentElement.clientWidth;
-            if (w <= 1621){
-                document.querySelector("#transparent-divider-2").style.display = "none";
-            } else{
-                document.querySelector("#transparent-divider-2").style.display = "block";
-            }
-
-            if (w <= 1106){
-                document.querySelector("#transparent-divider-1").style.display = "none";
-            } else{
-                document.querySelector("#transparent-divider-1").style.display = "block";
-            }
-        });
-        // При изменении размера
-        window.addEventListener('resize', (e) => {
-            var w = document.documentElement.clientWidth;
-            if (w <= 1621){
-                document.querySelector("#transparent-divider-2").style.display = "none";
-            } else{
-                document.querySelector("#transparent-divider-2").style.display = "block";
-            }
-
-            if (w <= 1106){
-                document.querySelector("#transparent-divider-1").style.display = "none";
-            } else{
-                document.querySelector("#transparent-divider-1").style.display = "block";
-            }
-        });
-    </script>
 </body>
 </html>

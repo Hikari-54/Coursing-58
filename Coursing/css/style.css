@@ -416,16 +416,16 @@ li{
     align-items: center;
 }
 #review-card-1{
-    margin-right: 15px;
+    margin-right: 25px;
 }
 #review-card-2{
-    margin: 0 15px;
+    margin: 0 25px;
 }
 #review-card-3{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 .review-card-divider{
-    height: 265px;
+    height: 400px;
     width: 1px;
     background-color: black;
     align-self: flex-end;
