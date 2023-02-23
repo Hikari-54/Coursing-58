@@ -92,27 +92,6 @@ header > div{
 #header-call-small{
     display: none;
 }
-#header-tg{
-    width: 254px;
-    height: 38px;
-    background-color: #61ACF6;
-}
-#header-tg-small{
-    display: none;
-}
-#question{
-    width: 38px;
-    height: 38px;
-    border-radius: 35px;
-    background-color: #d6d6d620;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#question > img{
-    width: 12px;
-}
 #burger-wrapper{
     width: 38px;
     height: 38px;
