@@ -225,6 +225,11 @@
         order: 1;
     }
 
+    /* Отзывы */
+    .review-card{
+        min-width: 0;
+    }
+
     /* Footer */
     footer{
         grid-template-columns: 1fr 1fr;
