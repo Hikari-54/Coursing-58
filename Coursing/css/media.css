@@ -375,7 +375,7 @@
         width: 38.3%;
     }
 }
-@media (max-width: 490px) {
+@media (max-width: 520px) {
     .plusses-flex-item{
         flex-basis: 60%;
     }
