@@ -1,7 +1,17 @@
 "use strict";
 
-
-
+// Функционал бургер меню
+const iconMenu = document.querySelector(".menu__icon");
+const menuBody = document.querySelector(".menu__body");
+// Проверяем существует ли такой объект
+if (iconMenu){
+    iconMenu.addEventListener("click", function(e){
+        // Этот класс будет запрещать листать страницу при открытом меню
+        document.body.classList.toggle("_lock");
+        iconMenu.classList.toggle("_active");
+        menuBody.classList.toggle("_active");
+    });
+};
 
 
 

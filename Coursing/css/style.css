@@ -4,6 +4,10 @@ html{
 body{
     background-color: #F7F8F2;
 }
+/* Запрещает листать страницу, пока открыто меню-бургер */
+body._lock{
+    overflow: hidden;
+}
 h1, h2, h3, p{
     font-family: 'Playfair Display';
     line-height: 139.8%;
@@ -146,6 +150,51 @@ header > div{
     transform: rotate(45deg) translate(0px, 50%);
 }
 
+/* Вёрстка мобильного header'а */
+.menu__body{ /* Это оболочка списка меню = nav */
+    position: fixed;
+    top: 0;
+    /* Изначально меню скрыто за левой границей экрана (когда на бургер не нажимали) */
+    left: -100%; /* ПОМЕНЯТЬ НА -100% КОГДА ЗАКОНЧУ!!! */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.95);
+    padding: 100px 30px 30px 30px;
+    /* Если поставить all, то будет артефакт */
+    transition: left 0.3s ease 0s;
+    /* Если пунктов меню будет слишком много, то его можно будет прокрутить */
+    overflow: auto;
+}
+/* Когда нажимаешь на бургер - меню выезжает на экран */
+.menu__body._active{
+    left: 0;
+}
+/* Эта плашка-прокладка между бургером, иконкой и списком меню в мобильной версии */
+.menu__body::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: #F7F8F2;
+    border-bottom: 0.75px solid #FF9915;
+    z-index: 2;
+}
+
+.menu__list > li{
+    list-style-type: none;
+    font-family: 'Montserrat';
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.menu__list > li:last-child{
+    margin-bottom: 0;
+}
+.menu__list > li a{
+    color: #F7F8F2;
+    font-weight: 600;
+}
 /* ---------------------------------------- */
 
 /* УТЗ */
