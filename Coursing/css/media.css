@@ -235,14 +235,7 @@
         font-size: 12px;
         margin-left: 5px;
     }
-    #burger-wrapper{
-        width: 30px;
-        height: 30px;
-    }
-    #burger-wrapper img{
-        width: 21px;
-        height: 15px;
-    }
+    
 
     #header-call{
         display: none;
