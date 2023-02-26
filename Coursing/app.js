@@ -13,9 +13,47 @@ if (iconMenu){
     });
 };
 
+// Плавная прокрутка при клике на ссылки с data-атрибутами
+const menuLinks = document.querySelectorAll(".menu__link[data-goto]");
+if (menuLinks.length > 0){
+    menuLinks.forEach(menuLink => {  
+        menuLink.addEventListener("click", onMenuLinkClick);
+    });
 
+    function onMenuLinkClick(e){
+        // Отключаем работу ссылки по-умолчанию (она теперь никуда не переходит)
+        e.preventDefault(); 
 
+        // Это будет сама ссылка
+        const menuLink = e.target; 
 
+        // 1. menuLink.dataset.goto - проверяет заполнен ли атрибут (если не null)
+        // 2. document.querySelector("menuLink.dataset.goto") - существует ли объект, на который ссылается data-атрибут
+        if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+            // Получаем объект, на который ссылается содержимое data-атрибута
+            const goToBlock = document.querySelector(menuLink.dataset.goto);
+
+            // Подсчёт положения объекта с учётом высоты шапки
+            // 1. положение блока на странице
+            // 2. window.scrollY = количество прокрученных пикселей по вертикали
+            // 3. вычитаем высоту шапки
+            const goToBlockValue = goToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector("header").offsetHeight;
+
+            // Убираем открытое бургер-меню при переходе по "ссылке"
+            if(iconMenu.classList.contains("_active")){
+                document.body.classList.remove("_lock");
+                iconMenu.classList.remove("_active");
+                menuBody.classList.remove("_active");
+            }
+
+            // Инициация скролла до цели ссылки
+            window.scrollTo({
+                top: goToBlockValue,
+                behavior: "smooth"
+            });
+        }
+    }
+};
 
 
 // Для изогнутых пунктирных линий в Плюсах курсинга 
