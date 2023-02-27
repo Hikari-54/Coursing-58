@@ -229,16 +229,9 @@
         justify-content: center;
         align-items: center;
 
-        width: 30px;
-        height: 30px;
-
         background-color: #FF9915;
         border-radius: 35px;
         margin-right: 10px;
-    }
-    #header-call-small img{
-        width: 17px;
-        height: 17px;
     }
 
     /* УТЗ */
