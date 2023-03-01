@@ -333,6 +333,17 @@
 /* --------------------------------------- */
 
 /* Для секции с плюсами курсинга */
+@media (min-width: 1400px) {
+    #curved-1{
+        width: 308px;
+    }
+    #curved-2{
+        width: 308px;
+    }
+    #curved-3{
+        width: 308px;
+    }
+}
 @media (max-width: 980px) {
     #plusses-flex-wrap{
         flex-wrap: wrap;

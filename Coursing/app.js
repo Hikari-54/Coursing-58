@@ -68,16 +68,31 @@ window.addEventListener('load', (e) => {
                         document.querySelector(".UTZ").offsetHeight +
                         document.querySelector("#what-is-coursing").offsetHeight + 
                         document.querySelector("#plusses .divider-flex").offsetHeight + 
-                        ( rect.height / 4 );
+                        ( rect.height / 3.3 );
 
-        if(document.querySelector("#what-is-coursing").offsetWidth > 980){
+        if(document.querySelector("#what-is-coursing").offsetWidth >= 1340){
             document.querySelector("#curved-1").style.top = `${abs_height}px`;
             document.querySelector("#curved-2").style.top = `${abs_height}px`;
             document.querySelector("#curved-3").style.top = `${abs_height}px`;
-        } else{
-            document.querySelector("#curved-1").style.top = `${abs_height}px`;
-            document.querySelector("#curved-3").style.top = `${abs_height + rect.height + 60}px`;                 
 
+            document.querySelector("#curved-1").style.left = `${217 + document.querySelector(".container").getBoundingClientRect().x}px`;
+            document.querySelector("#curved-2").style.left = `${217 + document.querySelector(".container").getBoundingClientRect().x + 308 + 25}px`;
+            document.querySelector("#curved-3").style.left = `${217 + document.querySelector(".container").getBoundingClientRect().x + 308 + 25 + 308 + 25}px`;
+
+        } else if(document.querySelector("#what-is-coursing").offsetWidth > 980){
+            document.querySelector("#curved-1").style.top = `${abs_height}px`;
+            document.querySelector("#curved-2").style.top = `${abs_height}px`;
+            document.querySelector("#curved-3").style.top = `${abs_height}px`;
+
+            document.querySelector("#curved-1").style.left = `${15.5}%`;
+            document.querySelector("#curved-2").style.left = `${39.5}%`;
+            document.querySelector("#curved-3").style.left = `${63.8}%`;
+        } else{
+            document.querySelector("#curved-1").style.top = `${abs_height + ( rect.height / 25 )}px`;
+            document.querySelector("#curved-3").style.top = `${abs_height + rect.height + ( rect.height / 2.8 )}px`;
+        
+            document.querySelector("#curved-1").style.left = `${32}%`;
+            document.querySelector("#curved-3").style.left = `${32}%`;
         };
     };
 });
@@ -94,14 +109,29 @@ window.addEventListener('resize', (e) => {
                         document.querySelector("#plusses .divider-flex").offsetHeight + 
                         ( rect.height / 4 );
 
-        if(document.querySelector("#what-is-coursing").offsetWidth > 980){
+        if(document.querySelector("#what-is-coursing").offsetWidth >= 1340){
             document.querySelector("#curved-1").style.top = `${abs_height}px`;
             document.querySelector("#curved-2").style.top = `${abs_height}px`;
             document.querySelector("#curved-3").style.top = `${abs_height}px`;
-        } else{
-            document.querySelector("#curved-1").style.top = `${abs_height}px`;
-            document.querySelector("#curved-3").style.top = `${abs_height + rect.height + 60}px`;                 
 
+            document.querySelector("#curved-1").style.left = `${217 + document.querySelector(".container").getBoundingClientRect().x}px`;
+            document.querySelector("#curved-2").style.left = `${217 + document.querySelector(".container").getBoundingClientRect().x + 308 + 25}px`;
+            document.querySelector("#curved-3").style.left = `${217 + document.querySelector(".container").getBoundingClientRect().x + 308 + 25 + 308 + 25}px`;
+
+        } else if(document.querySelector("#what-is-coursing").offsetWidth > 980){
+            document.querySelector("#curved-1").style.top = `${abs_height}px`;
+            document.querySelector("#curved-2").style.top = `${abs_height}px`;
+            document.querySelector("#curved-3").style.top = `${abs_height}px`;
+
+            document.querySelector("#curved-1").style.left = `${15.5}%`;
+            document.querySelector("#curved-2").style.left = `${39.5}%`;
+            document.querySelector("#curved-3").style.left = `${63.8}%`;
+        } else{
+            document.querySelector("#curved-1").style.top = `${abs_height + ( rect.height / 25 )}px`;
+            document.querySelector("#curved-3").style.top = `${abs_height + rect.height + ( rect.height / 2.8 )}px`;
+        
+            document.querySelector("#curved-1").style.left = `${32}%`;
+            document.querySelector("#curved-3").style.left = `${32}%`;
         };
     };
 });
