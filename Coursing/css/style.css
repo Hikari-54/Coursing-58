@@ -502,7 +502,7 @@ li{
 
 }
 .grid-review h3{
-    text-align: center;
+    /* text-align: center; */
 }
 .review-card{
     min-width: 500px;
@@ -532,7 +532,7 @@ li{
     margin-bottom: 30px;
 }
 .review-card p{
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 30px;
 }
 .profile-img{
@@ -585,6 +585,3 @@ footer > div{
     width: 35px;
     height: 35px;
 }
-
-
-/* flex-basis: 47%; для первых двух */
