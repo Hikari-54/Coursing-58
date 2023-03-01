@@ -70,7 +70,7 @@ window.addEventListener('load', (e) => {
                         document.querySelector("#plusses .divider-flex").offsetHeight + 
                         ( rect.height / 3.3 );
 
-        if(document.querySelector("#what-is-coursing").offsetWidth >= 1340){
+        if(document.querySelector("#what-is-coursing").offsetWidth >= 1400){
             document.querySelector("#curved-1").style.top = `${abs_height}px`;
             document.querySelector("#curved-2").style.top = `${abs_height}px`;
             document.querySelector("#curved-3").style.top = `${abs_height}px`;
