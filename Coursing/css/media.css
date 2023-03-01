@@ -14,7 +14,7 @@
     /* ---------------------------- */
 
     /* Шапка */
-    header > div > p{
+    header p{
         margin-left: 30px;
         font-size: 14px;
     }
@@ -91,10 +91,10 @@
     /* ---------------------------- */
 
     /* Шапка */
-    header{
+    .header{
         padding: 0 15px 0 15px;
     }
-    header > div > p{
+    header p{
         font-size: 12px;
         margin-left: 10px;
     }
@@ -179,11 +179,11 @@
     }
 
     /* Footer */
-    footer{
+    .footer{
         grid-template-columns: 1fr 1fr;
         padding: 30px 15px;
     }
-    footer > div{
+    footer > div > div{
         padding: 0 5px;
     }
     footer p{
@@ -212,10 +212,10 @@
         width: 60px;
         height: 45px;
     }
-    header{
+    .header{
         padding: 0 10px;
     }
-    header > div > p{
+    header p{
         font-size: 12px;
         margin-left: 5px;
     }
@@ -257,7 +257,7 @@
         font-size: 20px;
     }
 
-    footer{
+    .footer{
         padding: 30px 10px;
     }
 }
