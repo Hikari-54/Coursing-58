@@ -115,7 +115,6 @@
     
     /* УТЗ */
     .UTZ{
-        background: url("../img/figma480.png") center / cover no-repeat;
         height: 445px;
     }
     .UTZ > h1{
