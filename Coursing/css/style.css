@@ -474,7 +474,7 @@ li{
 }
 
 #map-wrap{
-    min-height: 450px;
+    min-height: 400px;
 }
 #map-wrap iframe{
     border-radius: 3px;
