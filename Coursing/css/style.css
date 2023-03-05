@@ -83,6 +83,10 @@ header{
     position: relative;
     z-index: 10;
 }
+#logo-wrapper img{
+    width: 80px;
+    height: 60px;
+}
 header a{
     text-decoration: none;
 }
