@@ -55,6 +55,34 @@ if (menuLinks.length > 0){
     }
 };
 
+// Lazy Load Яндекс карты
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(initYandexMap, 5000);
+});
+
+document.addEventListener('scroll', initYandexMapOnEvent);
+document.addEventListener('mousemove', initYandexMapOnEvent);
+document.addEventListener('touchstart', initYandexMapOnEvent);
+
+function initYandexMapOnEvent (e) {
+    initYandexMap();
+    e.currentTarget.removeEventListener(e.type, initYandexMapOnEvent);
+}
+
+function initYandexMap () {
+    if (window.yandexMapDidInit) {
+        return false;
+    }
+    window.yandexMapDidInit = true;
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+
+    script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc1fe5586b83f8c316c3655189f49949fb1b4ca8cf641cf62f3fc43d7d74fe69&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false';
+
+    document.getElementById("map-wrap").appendChild(script);
+}
 
 // Для изогнутых пунктирных линий в Плюсах курсинга 
 
