@@ -116,7 +116,7 @@
     /* УТЗ */
     .UTZ{
         height: 445px;
-        background: url("../img/utz780.png") center / cover no-repeat;
+        background: url("../img/utz780.webp") center / cover no-repeat;
     }
     .UTZ > h1{
         font-size: 26px;
@@ -203,7 +203,7 @@
     }
 
     .UTZ{
-        background: url("../img/utz450.png") center / cover no-repeat;
+        background: url("../img/utz450.utz") center / cover no-repeat;
     }
 
     /* Шапка */
