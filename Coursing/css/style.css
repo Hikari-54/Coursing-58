@@ -249,7 +249,7 @@ header > div > div{
 .UTZ{
     width: 100%;
     height: 620px;
-    background: url("../img/figma1300.png") center / cover no-repeat;
+    background: url("../img/utz.webp") center / cover no-repeat;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
@@ -521,9 +521,6 @@ li{
     justify-content: center;
     align-items: flex-start;
 
-}
-.grid-review h3{
-    /* text-align: center; */
 }
 .review-card{
     min-width: 500px;
