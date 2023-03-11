@@ -148,6 +148,7 @@ header > div > div{
     height: 22px;
     cursor: pointer;
     margin-left: 60px;
+    transition: transform 0.3s ease-in 0s;
 }
 .menu__icon span,
 .menu__icon::before,
