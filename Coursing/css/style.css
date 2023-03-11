@@ -115,6 +115,7 @@ header > div > div{
     height: 38px;
     background-color: #FF9915;
     margin-right: 30px;
+    transition: all 0.3s ease-in 0s;
 }
 #header-call-small{
     display: none;
