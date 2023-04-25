@@ -1,5 +1,0 @@
-User-agent: *
-Allow: *
-
-Sitemap: https://hikari-54.github.io/sitemap.xml
-Host: https://hikari-54.github.io/
