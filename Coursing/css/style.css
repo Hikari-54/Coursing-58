@@ -1,8 +1,14 @@
+:root{
+    --color-white: #F7F8F2;
+    --color-orange: #f8a403;
+    --color-orange-hover: #FC7F0A;
+}
+
 html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #F7F8F2;
+    background-color: var(--color-white);
 }
 /* Запрещает листать страницу, пока открыто меню-бургер */
 body._lock{
@@ -21,7 +27,7 @@ h2{
     display: inline-block;
     font-size: 32px;
     font-weight: 500;
-    color: #FF8A00;
+    color: var(--color-orange);
     margin: 0 25px 0 0;
 }
 h3{
@@ -42,19 +48,23 @@ img{
 
 /* Цвета */
 .orange{
-    color: #ff9c36;
-    /* было #FF8A00 (самый тёмный) */
-    /* #ff9c36 */
-    /* #ffa130 */
+    color: var(--color-orange);
 }
 .white{
-    color: #F7F8F2;
+    color: var(--color-white);
 }
-.stroke{
-    text-shadow: 2px 0 2px #ff99154d, 
-                0 2px 2px #ff99154d, 
-                -2px 0 2px #ff99154d, 
-                0 -2px 2px #ff99154d;
+.stroke-white{
+    /* text-shadow: 1px 1px 0px rgba(247,  248,  242, 0.3); */
+    text-shadow: 1px 0 0px rgba(247,  248,  242, 0.15), 
+                0 1px 0px rgba(247,  248,  242, 0.15), 
+                -1px 0 0px rgba(247,  248,  242, 0.15), 
+                0 -1px 0px rgba(247,  248,  242, 0.15);
+}
+.stroke-orange{
+    text-shadow: 1px 0 0px rgba(248, 164, 3, 0.15), 
+                0 1px 0px rgba(248, 164, 3, 0.15), 
+                -1px 0 0px rgba(248, 164, 3, 0.15), 
+                0 -1px 0px rgba(248, 164, 3, 0.15);
 }
 
 /* Жирность */
@@ -77,9 +87,7 @@ header{
     position: sticky;
     top: 0;
 
-    background-color: #F7F8F2;
-    border-bottom: 0.75px solid #FF9915;
-    box-shadow: 0 3px 10px 0px #ff99154f;
+    background-color: var(--color-white);    
 }
 .header{
     height: 100%;
@@ -112,7 +120,7 @@ header > div > div{
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 600;
-    color: #F7F8F2;
+    color: var(--color-white);
     border-radius: 35px;
 
     display: flex;
@@ -122,7 +130,7 @@ header > div > div{
 #header-call{
     width: 174px;
     height: 38px;
-    background-color: #FF9915;
+    background-color: var(--color-orange);
     margin-right: 30px;
     transition: all 0.3s ease-in 0s;
 }
@@ -135,7 +143,7 @@ header > div > div{
     width: 38px;
     height: 38px;
 
-    background-color: #FF9915;
+    background-color: var(--color-orange);
     border-radius: 35px;
     margin-right: 15px;
     transition: transform 0.3s ease-in 0s;
@@ -229,8 +237,9 @@ header > div > div{
     height: 80px;
     top: 0;
     left: 0;
-    background-color: #F7F8F2;
-    border-bottom: 0.75px solid #FF9915;
+    background-color: var(--color-white);
+    border-bottom: 0.75px solid var(--color-orange);
+    box-shadow: 0 3px 10px 0px #f8a4034f;
     z-index: 2;
 }
 .menu__body p{
@@ -238,7 +247,7 @@ header > div > div{
     margin-bottom: 30px;
     margin-left: 0;
     font-size: 24px;
-    color: #F7F8F2;
+    color: var(--color-white);
     font-weight: 600;
     text-align: center;
 }
@@ -264,7 +273,7 @@ header > div > div{
     font-size: 24px;
 }
 .menu__list > li a{
-    color: #F7F8F2;
+    color: var(--color-white);
     font-weight: 600;
 }
 /* ---------------------------------------- */
@@ -283,12 +292,13 @@ header > div > div{
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
 }
 .UTZ > p{
-    max-width: 450px;
+    max-width: 490px;
     font-family: 'Montserrat';
     font-size: 28px;
+    font-weight: 800;
 }
 .UTZ > a{
     display: flex;
@@ -304,7 +314,7 @@ header > div > div{
     font-size: 28px;
     font-family: 'Montserrat';
 
-    background-color: #FF9915;
+    background-color: var(--color-orange);
     border-radius: 40px;
 }
 /* ---------------------------------------- */
@@ -330,7 +340,7 @@ section{
     display: inline-block;
     width: 50px;
     height: 1px;
-    background-color: black;
+    background-color: #000;
     flex-grow: 1;
 }
 .divider-flex{
@@ -380,7 +390,7 @@ section img{
     display: block;
     width: 1px;
     height: 100px;
-    background-color: black;
+    background-color: #000;
     align-self: flex-end;
     margin-bottom: 50px;
 }
@@ -454,7 +464,7 @@ section img{
 .criteria-item-divider{
     height: 110px;
     width: 1px;
-    background-color: black;
+    background-color: #000;
 
     align-self: center;
 }
@@ -530,9 +540,9 @@ li{
     font-size: 24px;
     font-family: 'Montserrat';
     font-weight: 600;
-    color: #F7F8F2;
+    color: var(--color-white);
 
-    background-color: #FF9915;
+    background-color: var(--color-orange);
     border-radius: 40px;
 }
 #training p{
@@ -575,7 +585,7 @@ li{
 .review-card-divider{
     height: 270px;
     width: 1px;
-    background-color: black;
+    background-color: #000;
     align-self: flex-end;
     margin-bottom: 30px;
 }
@@ -586,8 +596,7 @@ li{
 .profile-img{
     width: 200px;
     height: 200px;
-    background-color: #D9D9D9;
-    border-radius: 100px;
+    border-radius: 50%;
 
     margin: 15px 0 20px 0;
 }
@@ -615,9 +624,9 @@ li{
 /* Footer */
 footer{
     width: 100%;
-    background: #F7F8F2;
-    border-top: 0.75px solid #FF9915;
-    box-shadow: 0px 0px 20px 0px #ff99154f;
+    background: var(--color-white);
+    border-top: 0.75px solid var(--color-orange);
+    box-shadow: 0px 0px 20px 0px #f8a4034f;
 }
 .footer{
     display: grid;
@@ -668,22 +677,22 @@ footer > div > div{
 
 /* Анимация кнопок :hover */
 #header-call:hover{
-    background-color: #fd810a;
+    background-color: var(--color-orange-hover);
     transform: scale(1.1);
     transition: all 0.25s ease-in;
 }
 #header-call-small:hover{
-    background-color: #fd810a;
+    background-color: var(--color-orange-hover);
     transform: scale(1.1);
     transition: all 0.25s ease-in;
 }
 .UTZ a:hover{
-    background-color: #fd810a;
+    background-color: var(--color-orange-hover);
     transform: scale(1.1);
     transition: all 0.25s ease-in;
 }
 #training-text a:hover{
-    background-color: #fd810a;
+    background-color: var(--color-orange-hover);
     transform: scale(1.1);
     transition: all 0.25s ease-in;
 }

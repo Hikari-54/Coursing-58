@@ -114,12 +114,13 @@
         padding-top: 70px;
     }
     .UTZ > p{
-        font-size: 20px;
+        max-width: 400px;
+        font-size: 16px;
     }
     .UTZ > a{
-        width: 217px;
-        height: 48px;
-        font-size: 20px;
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
     }
 
     /* Что такое курсинг? */
@@ -220,11 +221,6 @@
     }
     #header-call-small{
         display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: #FF9915;
-        border-radius: 35px;
         margin-right: 10px;
     }
 
@@ -233,10 +229,10 @@
         padding: 15px 20px 30px 20px;
     }
     .UTZ{
-        height: 520px;
+        height: 450px;
     }
     .UTZ h1{
-        padding-top: 115px;
+        padding-top: 80px;
     }
 
     /* Плюсы курсинга */
@@ -255,6 +251,13 @@
         padding: 30px 10px;
     }
 }
+/* Для XS mobile */
+@media (max-width: 410px){
+    .UTZ{
+        height: 497px;
+    }
+}
+
 /* --------------------------------------- */
 
 /* Для header'а */
